@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Objects HW3</title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<h1>MY MOVIE LIST</h1>
+
+    <form name="movieForm" onsubmit="return false">
+    <section id="part1">
+        <label for="name">Title </label>
+        <input type="text" id="name" name="Name"><br><br>
+        <label for="year">Year </label>
+        <input type="text" id="year" name="Year"><br><br>
+        <label for="rating">Rating </label>
+        <input type="number" id="rating" min="1" max="5"><br><br>
+
+        <button type="submit" id="add" onclick="movieSubmitEvent()">Add Movie</button><br><br>
+    </section>
+    </form>
+
+<section id="part2">
+    <button type="button" id="show">Show All</button><br><br>
+
+    <textarea rows="10" cols="60" id="output"></textarea>
+</section>
+
+
+<script type="text/javascript" src="scriptObjects.js"></script>
+
+</body>
+</html>
